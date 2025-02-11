@@ -1,0 +1,17 @@
+@use "../custom" as *;
+
+.featured {
+  padding: 0 0 5rem 0;
+
+  img {
+    &:hover {
+      filter: grayscale(120);
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 1rem;
+    }
+  }
+}

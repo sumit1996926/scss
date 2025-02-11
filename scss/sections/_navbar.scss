@@ -1,0 +1,31 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.logo-image {
+  width: 15rem;
+  height: 80%;
+  position: relative;
+  top: 8px;
+  left: -20px;
+}
+.navbar_icon_center {
+  margin-bottom: 5px;
+}
+.menu {
+  @include media-breakpoint-up(lg) {
+    height: 60px;
+  }
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include gradient;
+  li {
+    padding: 0 0.2rem;
+
+    a {
+      color: white !important;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}
